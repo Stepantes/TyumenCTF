@@ -9,7 +9,7 @@
 }
 
 body a,html a {
-    color: #000e94
+    color: #c61c3c
 }
 
 #app {
@@ -123,7 +123,7 @@ body a,html a {
 
 .head-nav a.active:before {
     top: -50px;
-    border-top-color: #000e94
+    border-top-color: #c61c3c
 }
 
 .head-nav a:not(.active):before {
@@ -173,7 +173,7 @@ body a,html a {
 }
 
 .index .head-nav li:not(:first-child):before {
-    background: #475391
+    background: #ff2c53
 }
 
 .index .footer {
@@ -196,7 +196,7 @@ body a,html a {
     vertical-align: middle;
     margin: 0 40px;
     font-size: 0;
-    background: url(../static/images/organizators.png) no-repeat;
+    background: url(/static/images/organizators.png) no-repeat;
     background-size: 100%
 }
 
@@ -205,7 +205,7 @@ body a,html a {
 }
 
 .partners li.partner-2 {
-    background-position: 0 -115px
+    background-position: 0 -115.5px
 }
 
 .partners li.partner-3 {
@@ -310,12 +310,12 @@ body a,html a {
     font-size: 20px;
     font-weight: 500;
     padding: 5px 10px;
-    color: #00064b
+    color: #771225
 }
 
 .about-date-item .line {
     height: 4px;
-    background: #00064b;
+    background: #771225;
     display: block;
     position: relative
 }
@@ -334,12 +334,12 @@ body a,html a {
 
 .about-date-item .info {
     padding: 5px 10px;
-    color: #00064b
+    color: #771225
 }
 
 .about-date-item .info span {
     color: #fff;
-    background: #00064b;
+    background: #771225;
     border-radius: 40px;
     padding: 0 10px
 }
@@ -385,7 +385,7 @@ body a,html a {
 }
 
 .main-map .wrapper .main-container .main-page-logo a:hover {
-    background: #000650
+    background: #771225
 }
 
 .main-map .wrapper .main-container .btn-big,.main-map .wrapper .main-container .btn-reg {
@@ -406,14 +406,14 @@ body a,html a {
 
 .main-map .wrapper .main-container .btn-big .btn-content i,.main-map .wrapper .main-container .btn-reg .btn-content i {
     font-size: 50pt;
-    color: #000650
+    color: #771225
 }
 
 .main-map .wrapper .main-container .btn-big .btn-text-content,.main-map .wrapper .main-container .btn-reg .btn-text-content {
     font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 18pt;
-    color: #000650;
+    color: #771225;
     transform: rotate(45deg);
     text-transform: uppercase;
     -moz-user-select: none;
@@ -852,7 +852,7 @@ body a,html a {
     width: 0;
     height: 0;
     border: 8px solid transparent;
-    border-bottom-color: #000e94;
+    border-bottom-color: #c31c3d;
     position: relative;
     top: -8px
 }
@@ -865,7 +865,7 @@ body a,html a {
     width: 0;
     height: 0;
     border: 8px solid transparent;
-    border-top-color: #000e94
+    border-top-color: #c31c3d
 }
 
 .reg-border {

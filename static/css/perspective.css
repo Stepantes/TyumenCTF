@@ -14,14 +14,15 @@
     grid-template-rows: repeat(28, calc(10rem / var(--rows-count)));
     grid-template-columns: repeat(53, calc(10rem / var(--cols-count)));
     gap: calc(1rem);
-    perspective: 600px; /* Глубина перспективы */
-    transform: rotateX(-45deg) rotateY(0deg) rotateZ(35deg); /* Наклон всего контейнера */
+    perspective: 600px;
+    transform: rotateX(-45deg) rotateY(10deg) rotateZ(25deg);
     transform-origin: center;
 }
 
 .perspective-block {
     background: white;
     position: relative;
+    border-radius: 27px;
 }
 
 .perspective-block::before {
@@ -35,6 +36,7 @@
     z-index: 1;
     transition: top 0.2s, left 0.2s;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 .perspective-block::after {
@@ -97,6 +99,7 @@
 }
 
 .first-perspective-block::after {
+    border-radius: 25px;
     background: url("../../static/images/user.avif") no-repeat center center / cover;
 }
 
@@ -126,9 +129,7 @@
 }
 
 .perspective-logo {
-    width: 28rem;
-    height: 28rem;
-    position: absolute;
-    right: 8rem;
-    bottom: 40dvh;
+    width: 200px;
+    grid-column: calc(var(--fourth-x-end) + 3); / 50;
+    grid-row: 1 / 10;
 }
