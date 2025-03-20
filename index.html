@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>TyumenCTF</title>
+    <link rel="shortcut icon" href="https://uralctf.org/favicon.ico" type="image/x-icon">
+    <style>#preloader {
+        background: #1C1C1C url("/static/images/bg.webp") 100% 100%;
+        position: absolute;
+        display: table;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+
+    #preloader .precell {
+        display: table-cell;
+        color: #fff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    #preloader .prelogo {
+        height: 38px;
+        width: 235px;
+        display: inline-block;
+        margin-bottom: 30px;
+        background: url("/static/images/UpperLeftLogo.svg") no-repeat;
+    }</style>
+    <script type="text/javascript" src="TyumenCTF_files/openapi.js.Без названия"></script>
+    <script type="text/javascript">VK.init({apiId: 6687531, onlyWidgets: true});</script>
+    <link href="static/css/bundle.css" rel="stylesheet">
+    <link href="static/css/tyumenctf.css" rel="stylesheet">
+    <link href="static/css/perspective.css" rel="stylesheet">
+    <script type="text/javascript" src="TyumenCTF_files/json.txt" async=""></script>
+    <style type="text/css" data-ymaps="css-modules">.ymaps-2-1-79-copyright {
+        position: relative;
+        z-index: 1;
+        display: block;
+        float: right;
+        margin-right: 3px;
+        margin-left: 10px
+    }
+
+    /**/
+    </style>
+    <style type="text/css" data-ymaps="css-modules">.ymaps-2-1-79-error-message {
+        display: table;
+        margin: 10px 0;
+        padding: 0 10px 0 45px;
+        height: 25px;
+        background-position: 10px 50%;
+        background-repeat: no-repeat;
+        color: #000;
+        font: 13px/1.2 Arial, sans-serif
+    }
+
+    .ymaps-2-1-79-error-message__msg {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .ymaps-2-1-79-error-message {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSI+PHBhdGggZmlsbD0iI0JFQkVCRSIgZD0iTTEyLjUgMjVhMTIuNSAxMi41IDAgMSAwIDAtMjUgMTIuNSAxMi41IDAgMCAwIDAgMjVzLTYuOSAwIDAgMHoiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTIuNSAyMi4xMWE5LjUgOS41IDAgMSAwIDAtMTkgOS41IDkuNSAwIDAgMCAwIDE5YzAtLjAxLTUuMi0uMDEgMCAweiIvPjxlbGxpcHNlIGN4PSI4LjUiIGN5PSI5LjkiIGZpbGw9IiNCRUJFQkUiIHJ4PSIxLjUiIHJ5PSIxLjYiLz48ZWxsaXBzZSBjeD0iMTYuNSIgY3k9IjkuOSIgZmlsbD0iI0JFQkVCRSIgcng9IjEuNSIgcnk9IjEuNiIvPjxwYXRoIGZpbGw9IiNCRUJFQkUiIGQ9Ik0xMi41IDE0LjQ4YzMuMDQgMCA1LjUuNiA1LjUgMS40NCAwIC44LTIuNDYgMS40NC01LjUgMS40NFM3IDE2LjcyIDcgMTUuOTJjMC0uODIgMi41LTEuNDIgNS41LTEuNDR6Ii8+PC9zdmc+)
+    }
+
+    /**/
+    </style>
+    <style type="text/css" data-ymaps="css-modules">.ymaps-2-1-79-pictogramCircleIconContent {
+        display: block;
+        background-size: contain;
+        width: 22px;
+        height: 22px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -11px;
+        left: -11px;
+    }</style>
+</head>
+<body style="overflow: auto;">
+<div id="app" class="index">
+    <header class="head">
+        <div class="page-border">
+            <div class="head-middle head-right">
+                <nav class="head-nav">
+                    <ul>
+                        <li><a href="/about.html">О мероприятии</a></li>
+                        <li><a href="/schedule">Программа</a></li>
+                        <li><a href="/places">Площадки</a></li>
+                        <li><a href="/members">Участники</a></li>
+                        <li><a href="/registration">Регистрация</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="head-middle"><a href="/"><img src="static/images/UpperLeftLogo.svg"
+                                                      style="height: 60px; width: 60px; object-fit: cover"></a></div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div style="display: table-cell; vertical-align: middle;">
+            <div class="page-border-big">
+                <div>
+                    <style>
+                        .p-0 {
+                            padding: 0 !important;
+                        }
+
+                        .video-place {
+                            width: 818px !important;
+                            height: 460px !important;
+                        }
+
+                        .left-container {
+                            margin-top: -355px !important;
+                        }
+
+                        .right-container {
+                            margin-top: 355px !important;
+                        }
+
+                        .subtitle {
+                            z-index: 1;
+                            user-select: none;
+                            -moz-user-select: none;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .sub-right {
+                            align-items: flex-end;
+                            text-align: right;
+                        }
+
+                        .sub-left {
+                            align-items: flex-start;
+                            text-align: left;
+                        }
+
+                        .subtitle-tag {
+                            width: 100%;
+                            font-size: 10pt;
+                            margin-bottom: 5px;
+                            text-transform: uppercase;
+                        }
+
+                        .mb-15px {
+                            margin-bottom: 15px;
+                        }
+
+                        .mb-6px {
+                            margin-bottom: 6px;
+                        }
+
+                        .subtitle-name {
+                            font-size: 20pt;
+                            color: #fff;
+                            line-height: 1;
+                        }
+
+                        .subtitle-name span {
+                            padding: 2px 3px 4px 3px;
+                            background: #fff;
+                            border-radius: 4px;
+                            text-transform: uppercase;
+                            font-size: 17pt;
+                            color: #000;
+                            display: inline-block;
+                            margin-left: 6px;
+                            line-height: 22px;
+                            vertical-align: top;
+                            margin-top: 2px;
+                        }
+
+                        .subtitle-date {
+                            display: flex;
+                            flex-direction: column;
+                            background: #ffffff;
+                            padding: 2px 5px;
+                        }
+
+                        .subtitle-day {
+                            font-size: 30pt;
+                            color: #000650;
+                            text-align: center;
+                            line-height: 1;
+                        }
+
+                        .subtitle-month {
+                            font-size: 14pt;
+                            color: #000650;
+                            text-align: center;
+                            font-variant: all-small-caps;
+                        }
+
+                        .date-right {
+                            float: right;
+                            margin-left: 10px;
+                        }
+
+                        .date-left {
+                            float: left;
+                            margin-right: 10px;
+                        }
+
+                        .photo-block-link {
+                            position: absolute;
+                            z-index: 2;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .btn-text-content {
+                            padding-top: 0 !important;
+                        }
+
+                        .all-small-caps {
+                            line-height: 1;
+                            font-variant: all-small-caps !important;
+                        }
+
+                        .modal {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0, 0, 0, 0.3);
+                        }
+                    </style>
+                    <div class="perspective-wrapper">
+                        <div class="perspective-container">
+                            <a class="perspective-block first-perspective-block"></a>
+                            <button class="perspective-block second-perspective-block"></button>
+                            <button class="perspective-block third-perspective-block"></button>
+                            <button class="perspective-block fourth-perspective-block"></button>
+                            <button class="perspective-block fifth-perspective-block"></button>
+                            <button class="perspective-block sixth-perspective-block"></button>
+                        </div>
+                        <img src="static/images/tctfMainLogo.svg" class="perspective-logo" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="page-border">
+                <div>
+                    <div class="bottom-copyright-block">
+                        <div class="button-contact-email-line">
+                            По вопросам техподдержки и проблем с заданиями <a href="mailto:org@uralctf.org">org@uralctf.org</a>
+                        </div>
+                        <div class="button-contact-email-line">
+                            По организационным вопросам <a href="mailto:org@uralctf.org">org@uralctf.org</a>
+                        </div>
+                    </div>
+                    <div class="bottom-contacts-block">
+                        <div class="bottom-contact-button-line">
+                            <ul class="bottom-contact-list">
+                                <li>
+                                    <a href="https://t.me/uralctf" target="_blank" title="Telegram"
+                                       class="bottom-contact-item bottom-contact-telegram">Telegram</a>
+                                </li>
+                                <li>
+                                    <a href="https://vk.com/uralctf" target="_blank" title="VK"
+                                       class="bottom-contact-item bottom-contact-vk">VK</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>window.serverState = {registrationClosed: true};</script>
+<script type="text/javascript" src="TyumenCTF_files/bundle.js.Без названия"></script>
+</body>
+</html>

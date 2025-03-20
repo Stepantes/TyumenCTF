@@ -1,0 +1,135 @@
+.perspective-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    position: relative;
+}
+
+.perspective-container {
+    --rows-count: 28;
+    --cols-count: 53;
+
+    display: grid;
+    grid-template-rows: repeat(28, calc(30dvw / var(--rows-count)));
+    grid-template-columns: repeat(53, calc(40dvw / var(--cols-count)));
+    gap: calc(0.5dvh + 0.5dvw);
+    perspective: 600px; /* Глубина перспективы */
+    transform: rotateX(-45deg) rotateY(0deg) rotateZ(35deg); /* Наклон всего контейнера */
+    transform-origin: center;
+}
+
+.perspective-block {
+    background: white;
+    position: relative;
+}
+
+.perspective-block::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #FF204E;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: top 0.2s, left 0.2s;
+    cursor: pointer;
+}
+
+.perspective-block::after {
+    content: '';
+    position: absolute;
+    top: calc(-10px + 10%);
+    left: calc(-10px + 10%);
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    transition: top 0.2s, left 0.2s;
+    cursor: pointer;
+}
+
+.perspective-block:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.perspective-block:hover::after {
+    top: 10%;
+    left: 10%;
+}
+
+* {
+    --first-x-start: 1;
+    --first-y-start: 8;
+    --first-x-end: 10;
+    --first-y-end: 15;
+
+    --second-x-start: var(--first-x-end);
+    --second-y-start: var(--first-y-end);
+    --second-x-end: calc(var(--first-x-end) + 12);
+    --second-y-end: calc(var(--first-y-end) + 13);
+
+    --third-x-start: calc(var(--second-x-end) - 7);
+    --third-y-start: 1;
+    --third-x-end: var(--second-x-end);
+    --third-y-end: var(--first-y-start);
+
+    --fourth-x-start: var(--third-x-end);
+    --fourth-y-start: var(--third-y-end);
+    --fourth-x-end: calc(var(--third-x-end) + 12);
+    --fourth-y-end: calc(var(--third-y-end) + 16);
+
+    --fifth-x-start: var(--fourth-x-end);
+    --fifth-y-start: calc(var(--first-y-end) + 4);
+    --fifth-x-end: calc(var(--fourth-x-end) + 7);
+    --fifth-y-end: calc(var(--fourth-y-end) + 2);
+
+    --sixth-x-start: var(--fifth-x-end);
+    --sixth-y-start: calc(var(--fifth-y-start) + 2);
+    --sixth-x-end: calc(var(--fifth-x-end) + 12);
+    --sixth-y-end: calc(var(--second-y-end) + 1);
+}
+
+.first-perspective-block {
+    grid-column: var(--first-x-start) / var(--first-x-end);
+    grid-row: var(--first-y-start) / var(--first-y-end);
+}
+
+.first-perspective-block::after {
+    background: url("../../static/images/user.avif") no-repeat center center / cover;
+}
+
+.second-perspective-block {
+    grid-column: var(--second-x-start) / var(--second-x-end);
+    grid-row: var(--second-y-start) / var(--second-y-end);
+}
+
+.third-perspective-block {
+    grid-column: var(--third-x-start) / var(--third-x-end);
+    grid-row: var(--third-y-start) / var(--third-y-end);
+}
+
+.fourth-perspective-block {
+    grid-column: var(--fourth-x-start) / var(--fourth-x-end);
+    grid-row: var(--fourth-y-start) / var(--fourth-y-end);
+}
+
+.fifth-perspective-block {
+    grid-column: var(--fifth-x-start) / var(--fifth-x-end);
+    grid-row: var(--fifth-y-start) / var(--fifth-y-end);
+}
+
+.sixth-perspective-block {
+    grid-column: var(--sixth-x-start) / var(--sixth-x-end);
+    grid-row: var(--sixth-y-start) / var(--sixth-y-end);
+}
+
+.perspective-logo{
+    width: 30dvw;
+    height:30dvw;
+    position: absolute;
+    right: 4dvw;
+    bottom: 40dvh;
+}
