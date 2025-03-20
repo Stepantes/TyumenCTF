@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
     width: 100dvw;
     position: relative;
 }
@@ -12,9 +11,9 @@
     --cols-count: 53;
 
     display: grid;
-    grid-template-rows: repeat(28, calc(30dvw / var(--rows-count)));
-    grid-template-columns: repeat(53, calc(40dvw / var(--cols-count)));
-    gap: calc(0.5dvh + 0.5dvw);
+    grid-template-rows: repeat(28, calc(40rem / var(--rows-count)));
+    grid-template-columns: repeat(53, calc(40rem / var(--cols-count)));
+    gap: calc(1rem);
     perspective: 600px; /* Глубина перспективы */
     transform: rotateX(-45deg) rotateY(0deg) rotateZ(35deg); /* Наклон всего контейнера */
     transform-origin: center;
@@ -126,10 +125,10 @@
     grid-row: var(--sixth-y-start) / var(--sixth-y-end);
 }
 
-.perspective-logo{
-    width: 30dvw;
-    height:30dvw;
+.perspective-logo {
+    width: 28rem;
+    height: 28rem;
     position: absolute;
-    right: 4dvw;
+    right: 8rem;
     bottom: 40dvh;
 }
