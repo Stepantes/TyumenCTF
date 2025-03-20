@@ -11,8 +11,8 @@
     --cols-count: 53;
 
     display: grid;
-    grid-template-rows: repeat(28, calc(40rem / var(--rows-count)));
-    grid-template-columns: repeat(53, calc(40rem / var(--cols-count)));
+    grid-template-rows: repeat(28, calc(10rem / var(--rows-count)));
+    grid-template-columns: repeat(53, calc(10rem / var(--cols-count)));
     gap: calc(1rem);
     perspective: 600px; /* Глубина перспективы */
     transform: rotateX(-45deg) rotateY(0deg) rotateZ(35deg); /* Наклон всего контейнера */
