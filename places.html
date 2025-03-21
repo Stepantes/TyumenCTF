@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>TyumenCTF</title>
     <link rel="shortcut icon" href="/static/images/UpperLeftLogo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>#preloader {
         background: #016 url("/static/images/bg.webp") 100% 100%;
         position: absolute;
@@ -29,17 +30,37 @@
         display: inline-block;
         margin-bottom: 30px;
         background: url("/static/images/horiz-logo-white.svg") no-repeat;
-    }</style>
+    }
+
+    .pc-map {
+        display: block;
+    }
+
+    .mobile-map {
+        display: none;
+    }
+
+    @media (max-width: 1000px) {
+        .place {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pc-map {
+            display: none;
+        }
+
+        .mobile-map {
+            display: block;
+        }
+    }
+
+    </style>
     <link href="static/css/bundle.css" rel="stylesheet">
     <link href="static/css/tyumenctf.css" rel="stylesheet">
     <script type="text/javascript" src="./TyumenCTF_files/json.txt" async=""></script>
 </head>
-<body style="overflow: auto;">
-<script>document.body.style.overflow = "auto";
-window.onload = function () {
-    document.getElementById("preloader").remove();
-    document.body.style.overflow = "auto";
-};</script>
+<body>
 <div id="app" class="">
     <header class="head">
         <div class="page-border">
@@ -49,14 +70,13 @@ window.onload = function () {
                         <li><a href="about.html">О мероприятии</a></li>
                         <li><a href="schedule.html">Программа</a></li>
                         <li><a href="places.html" class="active" aria-current="page">Площадки</a></li>
-                        <li><a href="members.html">Участники</a></li>
-                        <li><a href="registration.html">Регистрация</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="head-middle"><a href="index.html">
                 <div class="head-middle"><a href="index.html"><img src="static/images/UpperLeftLogoDark.svg"
-                                                                   style="height: 60px; width: 60px; padding-left: 27px; object-fit: cover"></a></div>
+                                                                   style="height: 60px; width: 60px; padding-left: 27px; object-fit: cover"></a>
+                </div>
             </a></div>
             <div class="clearfix"></div>
         </div>
@@ -83,7 +103,30 @@ window.onload = function () {
                             </div>
                         </div>
                     </div>
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/tyumenskiy_tekhnopark/1090657143/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Тюменский технопарк</a><a href="https://yandex.ru/maps/55/tyumen/category/science_park/126204989789/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Технопарк в Тюмени</a><a href="https://yandex.ru/maps/55/tyumen/category/new_technologies/184106206/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Новые технологии в Тюмени</a><iframe src="https://yandex.ru/map-widget/v1/?ll=65.566676%2C57.137779&mode=search&oid=1090657143&ol=biz&z=17.03" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div style="position:relative;overflow:hidden;" class="pc-map">
+                        <a href="https://yandex.ru/maps/org/tyumenskiy_tekhnopark/1090657143/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Тюменский технопарк</a><a
+                            href="https://yandex.ru/maps/55/tyumen/category/science_park/126204989789/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Технопарк в Тюмени</a><a
+                            href="https://yandex.ru/maps/55/tyumen/category/new_technologies/184106206/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:28px;">Новые технологии в Тюмени</a>
+                        <iframe width="560" height="400"
+                                src="https://yandex.ru/map-widget/v1/?ll=65.566676%2C57.137779&mode=search&oid=1090657143&ol=biz&z=17.03"
+                                frameborder="1" allowfullscreen="true"
+                                style="position:relative;"></iframe>
+                    </div>
+                    <div style="position:relative;overflow:hidden;" class="mobile-map">
+                        <a href="https://yandex.ru/maps/org/tyumenskiy_tekhnopark/1090657143/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Тюменский технопарк</a><a
+                            href="https://yandex.ru/maps/55/tyumen/category/science_park/126204989789/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Технопарк в Тюмени</a><a
+                            href="https://yandex.ru/maps/55/tyumen/category/new_technologies/184106206/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:28px;">Новые технологии в Тюмени</a>
+                        <iframe width="320"
+                                src="https://yandex.ru/map-widget/v1/?ll=65.566676%2C57.137779&mode=search&oid=1090657143&ol=biz&z=17.03"
+                                frameborder="1" allowfullscreen="true"
+                                style="position:relative;"></iframe>
+                    </div>
                     <div class="clearfix"></div>
                 </li>
             </ul>

@@ -1,14 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);body,html {
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+body, html {
     margin: 0;
     padding: 0;
     border: 0;
     height: 100%;
     font-size: 14px;
-    font-family: "Segoe UI",Tahome,Arial;
+    font-family: "Segoe UI", Tahome, Arial;
     color: #000
 }
 
-body a,html a {
+body a, html a {
     color: #c61c3c
 }
 
@@ -42,15 +44,34 @@ body a,html a {
 }
 
 .page-border {
-    width: 1020px;
+    max-width: 1020px;
+    width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0 20px
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90dvw;
+    width: 100%;
+}
+
+.main-page-content {
+    display: flex;
+    justify-content: center;
 }
 
 .page-border-big {
-    min-width: 1200px;
-    display: block;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px
 }
@@ -61,7 +82,7 @@ body a,html a {
     height: 80px
 }
 
-.head-middle>* {
+.head-middle > * {
     font-size: initial;
     display: inline-block;
     vertical-align: middle
@@ -93,9 +114,9 @@ body a,html a {
 
 .head-nav ul {
     margin: 0;
-    padding: 0;
     list-style: none;
-    font-size: 0
+    font-size: 0;
+    padding: 0 20px;
 }
 
 .head-nav li {
@@ -162,7 +183,7 @@ body a,html a {
 }
 
 .index {
-    background: #1C1C1C url(/static/images/bg.webp) 100% 100% repeat-y;
+    background: #1C1C1C url(/static/images/bg.webp) 100% 100% repeat;
     color: #fff;
 }
 
@@ -296,7 +317,7 @@ body a,html a {
     padding: 20px 0
 }
 
-.about-dates>div {
+.about-dates > div {
     display: inline-block;
     vertical-align: top;
     width: 30%;
@@ -390,7 +411,7 @@ body a,html a {
     background: #771225
 }
 
-.main-map .wrapper .main-container .btn-big,.main-map .wrapper .main-container .btn-reg {
+.main-map .wrapper .main-container .btn-big, .main-map .wrapper .main-container .btn-reg {
     position: relative;
     width: 158px;
     height: 158px;
@@ -402,17 +423,17 @@ body a,html a {
     align-items: center
 }
 
-.main-map .wrapper .main-container .btn-big .btn-content,.main-map .wrapper .main-container .btn-reg .btn-content {
+.main-map .wrapper .main-container .btn-big .btn-content, .main-map .wrapper .main-container .btn-reg .btn-content {
     transform: rotate(45deg)
 }
 
-.main-map .wrapper .main-container .btn-big .btn-content i,.main-map .wrapper .main-container .btn-reg .btn-content i {
+.main-map .wrapper .main-container .btn-big .btn-content i, .main-map .wrapper .main-container .btn-reg .btn-content i {
     font-size: 50pt;
     color: #771225
 }
 
-.main-map .wrapper .main-container .btn-big .btn-text-content,.main-map .wrapper .main-container .btn-reg .btn-text-content {
-    font-family: "Roboto",sans-serif;
+.main-map .wrapper .main-container .btn-big .btn-text-content, .main-map .wrapper .main-container .btn-reg .btn-text-content {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 18pt;
     color: #771225;
@@ -424,7 +445,7 @@ body a,html a {
     z-index: 3
 }
 
-.main-map .wrapper .main-container .btn-big .border-square,.main-map .wrapper .main-container .btn-reg .border-square {
+.main-map .wrapper .main-container .btn-big .border-square, .main-map .wrapper .main-container .btn-reg .border-square {
     position: absolute;
     width: 116px;
     height: 116px;
@@ -433,7 +454,7 @@ body a,html a {
     z-index: 1
 }
 
-.main-map .wrapper .main-container .btn-big .white-square-top-w,.main-map .wrapper .main-container .btn-reg .white-square-top-w {
+.main-map .wrapper .main-container .btn-big .white-square-top-w, .main-map .wrapper .main-container .btn-reg .white-square-top-w {
     position: absolute;
     background: #fff;
     z-index: 2;
@@ -443,7 +464,7 @@ body a,html a {
     left: 0
 }
 
-.main-map .wrapper .main-container .btn-big .white-square-top-h,.main-map .wrapper .main-container .btn-reg .white-square-top-h {
+.main-map .wrapper .main-container .btn-big .white-square-top-h, .main-map .wrapper .main-container .btn-reg .white-square-top-h {
     position: absolute;
     background: #fff;
     z-index: 2;
@@ -453,7 +474,7 @@ body a,html a {
     left: 0
 }
 
-.main-map .wrapper .main-container .btn-big .white-square-bottom-w,.main-map .wrapper .main-container .btn-reg .white-square-bottom-w {
+.main-map .wrapper .main-container .btn-big .white-square-bottom-w, .main-map .wrapper .main-container .btn-reg .white-square-bottom-w {
     position: absolute;
     background: #fff;
     z-index: 2;
@@ -463,7 +484,7 @@ body a,html a {
     right: 0
 }
 
-.main-map .wrapper .main-container .btn-big .white-square-bottom-h,.main-map .wrapper .main-container .btn-reg .white-square-bottom-h {
+.main-map .wrapper .main-container .btn-big .white-square-bottom-h, .main-map .wrapper .main-container .btn-reg .white-square-bottom-h {
     position: absolute;
     background: #fff;
     z-index: 2;
@@ -548,7 +569,7 @@ body a,html a {
     position: relative;
     width: 158px;
     height: 158px;
-    box-shadow: inset -2px -2px 0 #fff,inset 2px 2px 0 #fff;
+    box-shadow: inset -2px -2px 0 #fff, inset 2px 2px 0 #fff;
     background: none;
     display: flex;
     justify-content: center;
@@ -563,7 +584,7 @@ body a,html a {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 16pt;
     color: #fff;
@@ -606,7 +627,7 @@ body a,html a {
     line-height: 0.7;
     display: flex;
     align-items: flex-end;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 20pt;
     font-variant: small-caps;
@@ -647,7 +668,7 @@ body a,html a {
     position: relative;
     width: 158px;
     height: 158px;
-    box-shadow: inset -2px -2px 0 #fff,inset 2px 2px 0 #fff;
+    box-shadow: inset -2px -2px 0 #fff, inset 2px 2px 0 #fff;
     background: none;
     display: flex;
     justify-content: center;
@@ -667,7 +688,7 @@ body a,html a {
     z-index: 1
 }
 
-.btn-big a,.btn-reg a,.btn-medium a,.btn-small a,.btn-inverse-big a {
+.btn-big a, .btn-reg a, .btn-medium a, .btn-small a, .btn-inverse-big a {
     display: block;
     position: absolute;
     z-index: 9999;
@@ -680,7 +701,7 @@ body a,html a {
 }
 
 .btn-inverse-big a:hover {
-    box-shadow: inset -6px -6px 0 #fff,inset 6px 6px 0 #fff
+    box-shadow: inset -6px -6px 0 #fff, inset 6px 6px 0 #fff
 }
 
 .btn-reg a {
@@ -688,7 +709,7 @@ body a,html a {
 }
 
 .btn-reg a:hover {
-    box-shadow: inset -6px -6px 0 #fff,inset 6px 6px 0 #fff
+    box-shadow: inset -6px -6px 0 #fff, inset 6px 6px 0 #fff
 }
 
 .btn-big a {
@@ -696,7 +717,7 @@ body a,html a {
 }
 
 .btn-big a:hover {
-    box-shadow: inset 5px 5px 0 #000650,inset -5px -5px 0 #000650
+    box-shadow: inset 5px 5px 0 #000650, inset -5px -5px 0 #000650
 }
 
 .btn-medium a {
@@ -704,7 +725,7 @@ body a,html a {
 }
 
 .btn-medium a:hover {
-    box-shadow: inset 5px 5px 0 #000650,inset -5px -5px 0 #000650
+    box-shadow: inset 5px 5px 0 #000650, inset -5px -5px 0 #000650
 }
 
 .btn-small a {
@@ -712,7 +733,7 @@ body a,html a {
 }
 
 .btn-small a:hover {
-    box-shadow: inset 5px 5px 0 #000650,inset -5px -5px 0 #000650
+    box-shadow: inset 5px 5px 0 #000650, inset -5px -5px 0 #000650
 }
 
 .float-right {
@@ -815,7 +836,7 @@ body a,html a {
     border-bottom: 1px solid #cecece
 }
 
-.schedule-day-timing>li {
+.schedule-day-timing > li {
     padding: 8px 0;
     border-top: 1px solid #cecece
 }
@@ -943,7 +964,7 @@ body a,html a {
     box-sizing: border-box
 }
 
-.reg input:not([type="file"]),.reg select,.reg textarea {
+.reg input:not([type="file"]), .reg select, .reg textarea {
     width: 100%;
     padding: 8px 10px;
     box-sizing: border-box;
