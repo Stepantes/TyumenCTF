@@ -22,7 +22,8 @@ body a,html a {
     background: #1C1C1C url(/static/images/bg.webp) 100% 100%;
     color: #fff;
     display: table-row;
-    height: 100px
+    height: 100px;
+    width: 100%
 }
 
 .footer-inner {
@@ -161,8 +162,8 @@ body a,html a {
 }
 
 .index {
-    background: #1C1C1C url(/static/images/bg.webp) 100% 100%;
-    color: #fff
+    background: #1C1C1C url(/static/images/bg.webp) 100% 100% repeat-y;
+    color: #fff;
 }
 
 .index .logo {
