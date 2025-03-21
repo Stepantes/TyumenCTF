@@ -100,7 +100,7 @@
 
 .first-perspective-block::after {
     border-radius: 25px;
-    background: url("../../static/images/user.avif") no-repeat center center / cover;
+    background: url("../../static/images/about.svg") no-repeat center center / cover;
 }
 
 .second-perspective-block {
@@ -108,9 +108,19 @@
     grid-row: var(--second-y-start) / var(--second-y-end);
 }
 
+.second-perspective-block::after {
+    border-radius: 25px;
+    background: url("../../static/images/registrationmainbutton.svg") no-repeat center center / cover;
+}
+
 .third-perspective-block {
     grid-column: var(--third-x-start) / var(--third-x-end);
     grid-row: var(--third-y-start) / var(--third-y-end);
+}
+
+.third-perspective-block::after {
+    border-radius: 25px;
+    background: url("../../static/images/vkmainbutton.svg") no-repeat center center / cover;
 }
 
 .fourth-perspective-block {
@@ -118,14 +128,29 @@
     grid-row: var(--fourth-y-start) / var(--fourth-y-end);
 }
 
+.fourth-perspective-block::after {
+    border-radius: 25px;
+    background: url("../../static/images/platformsmainbutton.svg") no-repeat center center / cover;
+}
+
 .fifth-perspective-block {
     grid-column: var(--fifth-x-start) / var(--fifth-x-end);
     grid-row: var(--fifth-y-start) / var(--fifth-y-end);
 }
 
+.fifth-perspective-block::after {
+    border-radius: 25px;
+    background: url("../../static/images/membersmainbutton.svg") no-repeat center center / cover;
+}
+
 .sixth-perspective-block {
     grid-column: var(--sixth-x-start) / var(--sixth-x-end);
     grid-row: var(--sixth-y-start) / var(--sixth-y-end);
+}
+
+.sixth-perspective-block::after {
+    border-radius: 25px;
+    background: url("../../static/images/schedulemainbutton.svg") no-repeat center center / cover;
 }
 
 .perspective-logo {
