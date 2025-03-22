@@ -58,7 +58,7 @@ body a, html a {
 }
 
 @media (max-width: 1024px) {
-    .page-border{
+    .head > .page-border{
         display: flex !important;
         flex-direction: column-reverse !important;
         align-items: center !important;
