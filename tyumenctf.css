@@ -1,11 +1,5 @@
 @font-face {
-  font-family: 'uralctf';
-  src: url('../fonts/uralctf.eot?49442232');
-  src: url('../fonts/uralctf.eot?49442232#iefix') format('embedded-opentype'),
-       url('../fonts/uralctf.woff2?49442232') format('woff2'),
-       url('../fonts/uralctf.woff?49442232') format('woff'),
-       url('../fonts/uralctf.ttf?49442232') format('truetype'),
-       url('../fonts/uralctf.svg?49442232#uralctf') format('svg');
+  font-family: 'tyumenctf';
   font-weight: normal;
   font-style: normal;
 }
@@ -19,9 +13,9 @@
   }
 }
 */
- 
+
  [class^="uctf-"]:before, [class*=" uctf-"]:before {
-  font-family: "uralctf";
+  font-family: "tyumenctf";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -49,16 +43,3 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.uctf-location:before { content: '\e800'; } /* 'î €' */
-.uctf-group:before { content: '\e801'; } /* 'î ' */
-.uctf-mail:before { content: '\e803'; } /* 'î ƒ' */
-.uctf-logo-main:before { content: '\e804'; } /* 'î „' */
-.uctf-logo-1:before { content: '\e805'; } /* 'î …' */
-.uctf-mountains:before { content: '\e806'; } /* 'î †' */
-.uctf-404-icon:before { content: '\e80a'; } /* 'î Š' */
-.uctf-horiz-logo:before { content: image("static/images/UpperLeftLogoDark.svg"); } /* 'î ' */
-.uctf-text-logo:before { content: '\e80e'; } /* 'î Ž' */
-.uctf-vkontakte:before { content: '\f189'; } /* 'ï†‰' */
-.uctf-calendar:before { content: '\e845'; } /* 'î¡…' */
-.uctf-paper-plane:before { content: '\f1d8'; } /* 'ï‡˜' */

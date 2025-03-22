@@ -38,16 +38,37 @@ body a, html a {
     height: 100%
 }
 
+@media (max-width: 1000px) {
+    .page-title {
+        text-align: center;
+        margin: 30px 0
+    }
+}
 .page-title {
     text-align: center;
     margin: 30px 0
 }
+
 
 .page-border {
     max-width: 1020px;
     width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    .page-border {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1020px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .head-nav a:before {
+        display: none;
+    }
 }
 
 .header-main {
@@ -254,17 +275,6 @@ body a, html a {
     margin: 40px 0 80px
 }
 
-.sponsors li {
-    background: red;
-    height: 115px;
-    width: 400px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 40px;
-    font-size: 0;
-    background: url(../static/images/unlim.svg) no-repeat;
-    background-size: 100%
-}
 
 .about-info-left {
     display: block;
@@ -290,13 +300,6 @@ body a, html a {
     display: block
 }
 
-.about-categories-list {
-    height: 170px;
-    width: 640px;
-    background: url(../static/images/categories.png) no-repeat;
-    background-size: 100%;
-    margin: 30px auto 60px
-}
 
 .about-reg {
     text-align: center;
@@ -343,17 +346,6 @@ body a, html a {
     position: relative
 }
 
-.about-date-item .line:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -35px;
-    left: -54px;
-    height: 78px;
-    width: 78px;
-    background: url(../static/images/kvadratik.svg) no-repeat;
-    background-size: 100%
-}
 
 .about-date-item .info {
     padding: 5px 10px;
@@ -510,14 +502,6 @@ body a, html a {
     position: relative
 }
 
-.main-map .wrapper .left-container .photo-block .photo {
-    position: absolute;
-    width: 396px;
-    height: 396px;
-    background: url(../static/images/1.jpg) no-repeat;
-    background-size: cover;
-    transform: rotate(45deg)
-}
 
 .main-map .wrapper .left-container .btn-small {
     position: relative;
@@ -612,14 +596,6 @@ body a, html a {
     position: relative
 }
 
-.main-map .wrapper .right-container .photo-block .photo {
-    position: absolute;
-    width: 396px;
-    height: 396px;
-    background: url(../static/images/2.jpg) no-repeat;
-    background-size: cover;
-    transform: rotate(45deg)
-}
 
 .main-map .wrapper .right-container .text-block-small {
     width: 100%;
@@ -857,7 +833,7 @@ body a, html a {
     background: #e7f1ff;
     border-radius: 3px;
     margin-top: 10px;
-    color: #111766;
+    color: #771225;
     font-weight: 600
 }
 
@@ -920,7 +896,7 @@ body a, html a {
     padding: 10px 30px;
     border-radius: 3px;
     cursor: pointer;
-    background: #111766;
+    background: #771225;
     color: #fff
 }
 
@@ -939,7 +915,7 @@ body a, html a {
 .reg .reg-title {
     margin: 0 0 15px;
     font-size: 16px;
-    color: #111766
+    color: rgba(198, 28, 60, 0.65)
 }
 
 .reg .reg-field {
@@ -994,13 +970,13 @@ body a, html a {
     margin: 20px 0 10px;
     border-radius: 2px;
     width: 100%;
-    color: #4e5071;
+    color: rgba(198, 28, 60, 0.65);
     font-weight: 600
 }
 
 .reg .reg-person-number {
     font-size: 14px;
-    color: #111766;
+    color: #c31c3d;
     font-weight: 600
 }
 
@@ -1068,7 +1044,7 @@ body a, html a {
     list-style: none;
     margin: 0;
     padding: 10px;
-    border: 2px solid #111766
+    border: 2px solid #c31c3d
 }
 
 .members-filter-content li a {
@@ -1083,7 +1059,7 @@ body a, html a {
 
 .members-filter-content li a.active {
     color: #fff;
-    background: #111766
+    background: #c31c3d
 }
 
 .members-item-name {
@@ -1196,31 +1172,20 @@ body a, html a {
     font-size: 16px;
     font-weight: 500;
     padding: 5px 10px;
-    color: #00064b
+    color: #771225
 }
 
 .place-city-item .line {
     height: 4px;
-    background: #00064b;
+    background: #771225;
     display: block;
     position: relative
 }
 
-.place-city-item .line:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -35px;
-    left: -54px;
-    height: 78px;
-    width: 78px;
-    background: url(../static/images/ploschadki.svg) no-repeat;
-    background-size: 100%
-}
 
 .place-city-item .info {
     padding: 10px 10px;
-    color: #00064b
+    color: #771225
 }
 
 .place-city-item .info ul {
@@ -1296,17 +1261,6 @@ body a, html a {
     line-height: 18px;
     text-align: right;
     color: #fff
-}
-
-.button-contact-email-line a:before {
-    content: '';
-    height: 18px;
-    width: 18px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-    background: url(../static/images/contact-email.png) no-repeat;
-    background-size: 18px 18px
 }
 
 .bottom-contact-telegram {
