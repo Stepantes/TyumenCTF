@@ -57,17 +57,74 @@ body a, html a {
     margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
-    .page-border {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1024px) {
+    .page-border{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
         max-width: 1020px;
         width: 100%;
         margin: 0 auto;
     }
+
+    .head-nav{
+        font-size: 10px !important;
+    }
+
     .head-nav a:before {
-        display: none;
+        margin-left: -10px !important;
+        border-width: 0px !important;
+        margin-top: 40px !important;
+    }
+
+    .head-nav a:before {
+        margin-left: -10px !important;
+        border-width: 0px !important;
+        margin-top: 40px !important;
+    }
+
+    .head-nav a.active::before {
+        background: #c61c3c !important;
+        height: 1px !important;
+        width: 100% !important;
+        left: 10px !important;
+        top: 0 !important;
+    }
+
+    .head-nav a:not(.active)::before {
+        top: -50px !important;
+    }
+    .schedule-day-timing >li{
+        padding: 16px 0 !important;
+    }
+    .head-middle > a> img{
+        padding: 0 !important;
+        position: relative;
+        left: 20px;
+    }
+
+    .head-middle >  a{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .head-nav li {
+        font-size: 12px !important;
+    }
+
+    .place .place-info {
+        width: 100% !important;
+    }
+    .place-city-item{
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .head-nav li {
+        font-size: 11.5px !important;
     }
 }
 
