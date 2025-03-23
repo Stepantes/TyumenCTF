@@ -8,6 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/css/tyumenctf.css" rel="stylesheet">
     <link rel="shortcut icon" href="/static/images/UpperLeftLogo.svg" type="image/x-icon">
+    <style>
+        .categories-pc{
+            width: 80%;
+            align-content: center;
+            padding-left: 220px;
+        }
+        .categories-mobile {
+            display: none;
+        }
+        @media (max-width: 1000px) {
+            .categories-pc{
+                display: none;
+            }
+            .categories-mobile{
+                    display: block;
+                    width: 80%;!important;
+                    padding-left: 37px;
+            }
+        }
+        </style>
 </head>
 <body>
 <div id="app" class="">
@@ -40,12 +60,7 @@
                     Первенство пройдет 20 апреля 2025 года (воскресенье) в онлайн формате и приурочены к проведению 1-ой
                     Межрегиональной конференции по информационной безопасности в Уральском федеральном округе «Инфофорум–Тюмень»,
                     в рамках которого состоится награждение победителей.</p>
-                <p><b><a href="registration.html">Регистрация</a></b></p>
-                <h3 style="text-align: center; margin-top: 50px;">Школьный этап</h3>
-                <ul>
-                    <li><a href="places.html">Площадки</a></li>
-                    <li>Онлайн</li>
-                </ul>
+                <p><b><a href="">Регистрация</a></b></p>
                 <h3 style="text-align: center; margin-top: 50px;">Организаторы</h3>
                 <ul class="partners">
                     <li class="partner-1">Тюменский Государственный Университет</li>
@@ -54,12 +69,14 @@
                 </ul>
                 <div class="documents"><h3>Документы для школьников</h3>
                     <ul>
-                        <li><a href="https://uralctf.org/static/files/Standing_order_school_2023.pdf">Положение о
+                        <li><a href="">Положение о
                             соревнованиях TyumenCTF 2025</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
                 <h3 style="text-align: center; margin-top: 20px;">Задания могут относиться к категориям</h3>
+                <img src="static/images/category.png" class="categories-pc"><br>
+                <img src="static/images/category-mobile.png" class="categories-mobile"><br>
             </div>
         </div>
     </main>

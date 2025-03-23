@@ -11,7 +11,7 @@ body, html {
 }
 
 body a, html a {
-    color: #c61c3c
+    color: #851125
 }
 
 #app {
@@ -84,7 +84,7 @@ body a, html a {
     }
 
     .head-nav a.active::before {
-        background: #c61c3c !important;
+        background: #851125 !important;
         height: 1px !important;
         width: 100% !important;
         left: 10px !important;
@@ -224,7 +224,7 @@ body a, html a {
 
 .head-nav a.active:before {
     top: -50px;
-    border-top-color: #c61c3c
+    border-top-color: #851125
 }
 
 .head-nav a:not(.active):before {
@@ -908,7 +908,7 @@ body a, html a {
     width: 0;
     height: 0;
     border: 8px solid transparent;
-    border-bottom-color: #c31c3d;
+    border-bottom-color: #851125;
     position: relative;
     top: -8px
 }
@@ -921,7 +921,7 @@ body a, html a {
     width: 0;
     height: 0;
     border: 8px solid transparent;
-    border-top-color: #c31c3d
+    border-top-color: #851125
 }
 
 .reg-border {
