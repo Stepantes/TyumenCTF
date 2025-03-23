@@ -21,7 +21,7 @@ body a, html a {
 }
 
 .footer {
-    background: #1C1C1C url(/static/images/bg.webp) 100% 100%;
+    background: #1C1C1C url("../images/bg.webp") 100% 100%;
     color: #fff;
     display: table-row;
     height: 100px;
@@ -261,7 +261,7 @@ body a, html a {
 }
 
 .index {
-    background: #1C1C1C url(/static/images/bg.webp) 100% 100% repeat;
+    background: #1C1C1C url("../images/bg.webp") 100% 100% repeat;
     color: #fff;
 }
 
@@ -297,7 +297,7 @@ body a, html a {
     vertical-align: middle;
     margin: 0 40px;
     font-size: 0;
-    background: url(/static/images/organizators.png) no-repeat;
+    background: url("../images/organizators.png") no-repeat;
     background-size: 100%
 }
 
@@ -1286,7 +1286,7 @@ body a, html a {
 .bottom-contact-item {
     width: 23px;
     height: 23px;
-    background: url(/static/images/Socialmedia.svg) no-repeat;
+    background: url("../images/Socialmedia.svg") no-repeat;
     background-size: 47px 23px;
     font-size: 0;
     display: block;
